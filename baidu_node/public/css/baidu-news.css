@@ -1,0 +1,196 @@
+/*伪类选择器*/
+.cf::before,
+.cf::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*默认样式*/
+html{
+    /*62.5% = 10px 1rem = 10px 0.1rem = 1px*/
+    font-size: 62.5%;
+    font-family: inherit;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+header .icon {
+    position: absolute;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: 0.4rem;
+}
+/*导航栏的icon*/
+/*icon-one*/
+header .header-all{
+    width: 100%;
+    height: 4.8rem;
+    background: #3e98f0 url("../img/logo.png") no-repeat center center;
+    background-size: 6.5rem auto;
+}
+header .icon-one{
+    background: url("../img/icon.png") 0 0 no-repeat;
+    background-size: 40px 500px;
+}
+header .icon-two{
+    background: url("../img/icon.png") 0 -46.7rem no-repeat;
+    background-size: 40px 500px;
+}
+header .icon-three{
+    background: url("../img/icon.png") 0 -11rem no-repeat;
+    background-size: 40px 500px;
+}
+header .icon-four{
+    background: url("../img/icon.png") 0 -16.4rem no-repeat;
+    background-size: 40px 500px;
+}
+/*logo user add search*/
+header .logo{
+    display: inline-block;
+    float: left;
+    width: 3.4rem;
+    height: 100%;
+    margin-left: 0.8rem;
+}
+header .user{
+    height: 100%;
+    width: 3.4rem;
+    display: inline-block;
+    float: left;
+    margin-left: 1rem;
+}
+header .add{
+    height: 100%;
+    width: 3.4rem;
+    display: inline-block;
+    float: right;
+    margin-right: 0.8rem;
+}
+header .search{
+    height: 100%;
+    width: 3.4rem;
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+}
+/*导航栏*/
+.nav-content{
+    background-color: #3e98f0;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    padding-bottom: 1.5rem;
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+nav ul li a{
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-family: inherit;
+    padding: 1rem 0;
+}
+nav ul li i{
+    display: inline-block;
+    float: right;
+    position: relative;
+    height: 2rem;
+    border: 0.1rem solid #5dabf0;
+    margin-left: 1rem;
+}
+/*slide动画*/
+.slide{
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+.slide-div{
+    height: 19.2rem;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #5e5e5e;
+    position: relative;
+
+}
+.slide-div img{
+    width: 100%;
+}
+.slide-div ul{
+    width: 2400px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+}
+.slide-div ul li{
+    /*width: 600px;*/
+    float: left;
+}
+.showNav{
+    /*用绝对定位给数字按钮进行布局*/
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    bottom: 9px;
+    right: 5px;
+}
+.showNav span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #999;
+    color: #fff;
+    border-radius: 50%;
+}
+.showNav .active{
+    background-color: #3e98f0;
+}
+/*news-lists内容*/
+.news-lists{
+    margin: 0.5rem 0 0;
+    padding: 0 1.3rem;
+    list-style: none;
+}
+.news-lists h1{
+    font-size: 1.5rem;
+    color: #333;
+}
+.news-list{
+    display: flex;
+    border-bottom: 0.1rem solid #999;
+    margin-bottom: 1rem;
+}
+.newsImg{
+    flex: 1;
+}
+.news-content{
+    flex: 2;
+    padding: 0 1rem;
+}
+.news-content .newsTime{
+    font-size: 1.3rem;
+    color: #999;
+}
+.news-content .newsSrc{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #ff0000;
+    padding: 0.1rem;
+    border: 0.1rem solid #efb9b9;
+    border-radius: 20%;
+}
+.imgHeight{
+    height: 8.3rem;
+}

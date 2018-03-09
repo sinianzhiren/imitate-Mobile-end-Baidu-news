@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>百度新闻页面</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/baidu-news.css" type="text/css">
+</head>
+<body>
+<div class="container">
+<!--头部-->
+<header class="cf">
+    <div class="header-all">
+    <a href="" class="logo"><span class="icon icon-one"></span></a>
+    <a href="" class="user"><span class="icon icon-two"></span></a>
+    <!--百度logo-->
+
+    <a href="" class="add"><san class="icon icon-three"></san></a>
+    <a href="" class="search"><span class="icon icon-four"></span></a>
+    </div>
+</header>
+<!--导航栏-->
+<nav>
+    <div class="nav-content">
+    <ul>
+        <li><a href="" id="Featured">精选</a><i></i></li>
+        <li><a href="" id="Hundred">百家</a><i></i></li>
+        <li><a href="" id="local">本地</a><i></i></li>
+        <li><a href="" id="entertainment">娱乐</a><i></i></li>
+        <li><a href="" id="social">社会</a><i></i></li>
+        <li><a href="" id="military">军事</a><i></i></li>
+        <li><a href="" id="women">女人</a><i></i></li>
+        <li><a href="" id="Funny">搞笑</a><i></i></li>
+        <li><a href="" id="internet">互联网</a><i></i></li>
+        <li><a href="" id="science">科技</a><i></i></li>
+        <li><a href="" id="more">更多</a><i></i></li>
+    </ul>
+</div>
+</nav>
+    <!--中间内容-->
+    <article>
+        <!--slide滑动-->
+        <div class="slide">
+            <div class="slide-div">
+                <!--图片布局开始-->
+                    <ul>
+                        <li>
+                            <a href="">
+                            <img src="img/dog.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="img/timg.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="img/news.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="img/news-one.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                <!--图片布局结束-->
+                <!--按钮布局开始-->
+                <div class="showNav">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--按钮布局结束-->
+            </div>
+
+        </div>
+        <!--内容部分-->
+        <!--下面这部分可以被删除-->
+        <div class="news-main">
+            <ul class="news-lists">
+
+            </ul>
+        </div>
+        <!--内容部分结束-->
+    </article>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var deviceWidth = $("body").width();
+        $('nav li').each(function (index,item) {
+            if($(this).find('a').html().length>2){
+                $(this).width(deviceWidth/3);
+            }else {
+                $(this).width(deviceWidth/6);
+            }
+        })
+    });
+
+</script>
+<script src="js/news.js"></script>
+<script src="js/slide.js"></script>
+
+</body>
+</html>
